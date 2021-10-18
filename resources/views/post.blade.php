@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
 @section('konten')
-    <article>
-      <h2>{{ $post["title"] }}</h2>
-      <h5>{{ $post["author"] }}</h5>
-      <p>{{ $post["body"] }}</p>
-    </article>
+  <h2>{{ $post->title }}</h2>
 
-    <a href="/posts">Back</a>
+  {!! $post->body !!}
+
+  <a href="/posts">Back</a>
+
+
 @endsection
