@@ -16,19 +16,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // User::create([
+        //     'name' => 'Myoui Mina',
+        //     'email' => 'mina@twice.com',
+        //     'password' =>bcrypt(12345)
+        // ]);
 
-        User::create([
-            'name' => 'Myoui Mina',
-            'email' => 'mina@twice.com',
-            'password' =>bcrypt(12345)
-        ]);
+        // User::create([
+        //     'name' => 'Minatozaki Sana',
+        //     'email' => 'sana@twice.com',
+        //     'password' =>bcrypt(54321)
+        // ]);
 
-        User::create([
-            'name' => 'Minatozaki Sana',
-            'email' => 'sana@twice.com',
-            'password' =>bcrypt(54321)
-        ]);
+        User::factory(3)->create();
 
         Category::create([
             'name' => 'Web Programming',
@@ -40,40 +40,6 @@ class DatabaseSeeder extends Seeder
             'slug' => 'personal'
         ]);
 
-        Post::create([
-            'title' => 'Judul Pertama',
-            'slug' => 'judul-pertama',
-            'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quo dignissimos, omnis ad nam eos. Repudiandae eveniet iusto expedita modi asperiores dolorum,',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quo dignissimos, omnis ad nam eos. Repudiandae eveniet iusto expedita modi asperiores dolorum, facere nostrum atque dolores. Sit dolores beatae quos inventore dolorum distinctio alias aliquid ratione accusamus reprehenderit. Perspiciatis aspernatur obcaecati laborum voluptatibus architecto ipsam fuga ea dolor, itaque labore a repudiandae fugiat officia incidunt, doloremque animi in repellendus minima maxime. Modi perspiciatis, aspernatur totam animi voluptatibus ipsam ducimus facilis autem pariatur saepe beatae quae iusto cum harum possimus, voluptas quam provident? Corrupti magnam iusto, distinctio repellat rerum nihil accusantium optio deserunt qui unde repellendus assumenda quisquam ea ab odio libero esse! At nemo esse nulla reprehenderit, iure saepe fugiat quia numquam repellendus minus sit commodi quibusdam, illum culpa. Ipsum.',
-            'category_id' => 1,
-            'user_id' => 1
-        ]);
-
-        Post::create([
-            'title' => 'Judul Kedua',
-            'slug' => 'judul-kedua',
-            'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quo dignissimos, omnis ad nam eos. Repudiandae eveniet iusto expedita modi asperiores dolorum,',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quo dignissimos, omnis ad nam eos. Repudiandae eveniet iusto expedita modi asperiores dolorum, facere nostrum atque dolores. Sit dolores beatae quos inventore dolorum distinctio alias aliquid ratione accusamus reprehenderit. Perspiciatis aspernatur obcaecati laborum voluptatibus architecto ipsam fuga ea dolor, itaque labore a repudiandae fugiat officia incidunt, doloremque animi in repellendus minima maxime. Modi perspiciatis, aspernatur totam animi voluptatibus ipsam ducimus facilis autem pariatur saepe beatae quae iusto cum harum possimus, voluptas quam provident? Corrupti magnam iusto, distinctio repellat rerum nihil accusantium optio deserunt qui unde repellendus assumenda quisquam ea ab odio libero esse! At nemo esse nulla reprehenderit, iure saepe fugiat quia numquam repellendus minus sit commodi quibusdam, illum culpa. Ipsum.',
-            'category_id' => 1,
-            'user_id' => 1
-        ]);
-
-        Post::create([
-            'title' => 'Judul angka tiga',
-            'slug' => 'judul-angka-tiga',
-            'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quo dignissimos, omnis ad nam eos. Repudiandae eveniet iusto expedita modi asperiores dolorum,',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quo dignissimos, omnis ad nam eos. Repudiandae eveniet iusto expedita modi asperiores dolorum, facere nostrum atque dolores. Sit dolores beatae quos inventore dolorum distinctio alias aliquid ratione accusamus reprehenderit. Perspiciatis aspernatur obcaecati laborum voluptatibus architecto ipsam fuga ea dolor, itaque labore a repudiandae fugiat officia incidunt, doloremque animi in repellendus minima maxime. Modi perspiciatis, aspernatur totam animi voluptatibus ipsam ducimus facilis autem pariatur saepe beatae quae iusto cum harum possimus, voluptas quam provident? Corrupti magnam iusto, distinctio repellat rerum nihil accusantium optio deserunt qui unde repellendus assumenda quisquam ea ab odio libero esse! At nemo esse nulla reprehenderit, iure saepe fugiat quia numquam repellendus minus sit commodi quibusdam, illum culpa. Ipsum.',
-            'category_id' => 2,
-            'user_id' => 1
-        ]);
-
-        Post::create([
-            'title' => 'Judul empatttt',
-            'slug' => 'judul-empatttt',
-            'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quo dignissimos, omnis ad nam eos. Repudiandae eveniet iusto expedita modi asperiores dolorum,',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quo dignissimos, omnis ad nam eos. Repudiandae eveniet iusto expedita modi asperiores dolorum, facere nostrum atque dolores. Sit dolores beatae quos inventore dolorum distinctio alias aliquid ratione accusamus reprehenderit. Perspiciatis aspernatur obcaecati laborum voluptatibus architecto ipsam fuga ea dolor, itaque labore a repudiandae fugiat officia incidunt, doloremque animi in repellendus minima maxime. Modi perspiciatis, aspernatur totam animi voluptatibus ipsam ducimus facilis autem pariatur saepe beatae quae iusto cum harum possimus, voluptas quam provident? Corrupti magnam iusto, distinctio repellat rerum nihil accusantium optio deserunt qui unde repellendus assumenda quisquam ea ab odio libero esse! At nemo esse nulla reprehenderit, iure saepe fugiat quia numquam repellendus minus sit commodi quibusdam, illum culpa. Ipsum.',
-            'category_id' => 2,
-            'user_id' => 2
-        ]);
+        Post::factory(20)->create();
     }
 }
