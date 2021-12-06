@@ -16,11 +16,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // User::create([
-        //     'name' => 'Myoui Mina',
-        //     'email' => 'mina@twice.com',
-        //     'password' =>bcrypt(12345)
-        // ]);
+        User::create([
+            'name' => 'Myoui Mina',
+            'username' => 'minari',
+            'email' => 'mina@gmail.com',
+            'password' =>bcrypt('password')
+        ]);
 
         // User::create([
         //     'name' => 'Minatozaki Sana',
@@ -28,22 +29,22 @@ class DatabaseSeeder extends Seeder
         //     'password' =>bcrypt(54321)
         // ]);
 
-        // User::factory(3)->create();
+        User::factory(3)->create();
 
-        // Category::create([
-        //     'name' => 'Web Programming',
-        //     'slug' => 'web-programming'
-        // ]);
+        Category::create([
+            'name' => 'Web Programming',
+            'slug' => 'web-programming'
+        ]);
 
-        // Category::create([
-        //     'name' => 'Web Design',
-        //     'slug' => 'web-design'
-        // ]);
+        Category::create([
+            'name' => 'Web Design',
+            'slug' => 'web-design'
+        ]);
 
-        // Category::create([
-        //     'name' => 'Personal',
-        //     'slug' => 'personal'
-        // ]);
+        Category::create([
+            'name' => 'Personal',
+            'slug' => 'personal'
+        ]);
 
         Post::factory(40)->create();
     }
